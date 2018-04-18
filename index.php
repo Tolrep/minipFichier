@@ -28,7 +28,7 @@ if (isset($_POST['modification'])) {
     $message = "File has been modify!<br><br>";
 }
 
-if ($message){
+if (isset($message)){
     echo $message;
 }
 $dir = opendir("files");

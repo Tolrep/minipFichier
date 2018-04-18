@@ -8,7 +8,7 @@ if (isset($_POST['delete'])) {
             header('location:index.php');
             die;
         }else {
-            echo "Impossible de supprimer un dossier non-vide";
+            echo "Impossible de supprimer un dossier non-vide!<br><br><br>";
         }
     }else {
         unlink($_POST['delete']);
